@@ -1,0 +1,22 @@
+# User config:
+[user]
+	name = Marc Geremias Serra
+	email = marc.geremias@ithinkupc.com
+[core]
+	excludesfile = /Users/marc/.gitignore_global
+
+# Meld mergetool config:
+[merge]
+	tool = meld
+[difftool]
+	prompt = false
+[difftool "meld"]
+	trustExitCode = true
+	cmd = /Applications/Meld.app/Contents/MacOS/Meld $LOCAL $REMOTE
+[merge]
+	tool = meld
+[mergetool]
+	prompt = false
+[mergetool "meld"]
+	trustExitCode = true
+	cmd = open -W -a Meld --args --auto-merge \"$LOCAL\" \"$BASE\" \"$REMOTE\" --output=\"$MERGED\"
