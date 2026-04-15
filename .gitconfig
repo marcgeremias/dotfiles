@@ -1,25 +1,8 @@
 # User config:
 [user]
 	name = Marc Geremias Serra
-	email = marc.geremias@ithinkupc.com
-[core]
-	excludesfile = /Users/marc/.gitignore_global
+	email = mgeremias@telynet.com
 
 # Meld mergetool config:
 [merge]
 	tool = meld
-[difftool]
-	prompt = false
-[difftool "meld"]
-	trustExitCode = true
-	cmd = /Applications/Meld.app/Contents/MacOS/Meld $LOCAL $REMOTE
-[merge]
-	tool = meld
-[mergetool]
-	prompt = false
-[mergetool "meld"]
-	trustExitCode = true
-	cmd = meld \"$LOCAL\" \"$MERGED\" \"$REMOTE\" --output=\"$MERGED\"
-
-[diff]
-	renameLimit = 25964
